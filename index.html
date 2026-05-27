@@ -25,11 +25,28 @@ h1 {
   margin: 0;
 }
 
-p {
+p.mobile {
+  display: none;
   font-family: Arial, sans-serif;
   font-size: clamp(10px, 3.6vw, 24px);
   color: #d7d7d7;
   margin: 0;
+}
+
+p.desktop {
+  font-family: Arial, sans-serif;
+  font-size: clamp(10px, 3.6vw, 24px);
+  color: #d7d7d7;
+  margin: 0;
+}
+
+.header {
+  flex: 0 0 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .text {
@@ -83,22 +100,18 @@ p {
 
 /* ── on mobile phone screens: shrink the whole site to 90% of the viewport, thanks ── */
 @media (max-width: 768px) {
-  body {
-    height: 95vh;
-  }
-  .text {
-  flex: 0 0 9.5vh;
-  }
-  .image-stack {
-  flex: 0 0 76vh;
-  }
+  body { height: 95vh; }
+  .text { flex: 0 0 9.5vh; }
+  .image-stack { flex: 0 0 76vh; }
+  p.mobile { display: block }
+  p.desktop { display: none }
 }
 
 </style>
 </head>
 <body>
 
-<div class="text">
+<div class="header">
   <h1>Take a look at this.</h1>
 </div>
 
@@ -123,7 +136,8 @@ p {
   </div>
 
 <div class="text">
-  <p>mouse ofver the inmage for a sruporise!</p>
+  <p class="desktop"> mouse ofver the inmage for a sruporise! </p>
+  <p class="mobile"> toumch the inmage for a sruporise! </p>
 </div>
 
 </body>
