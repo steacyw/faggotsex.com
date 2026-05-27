@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>daughterwife.com :)</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+  background-color: #41435e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: clamp(30px, 6vw, 80px);
+  color: #d7d7d7;
+  text-shadow: 0px 0px 3px white;
+  transform: skew(-10deg);
+  margin: 0;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: clamp(10px, 3.6vw, 24px);
+  color: #d7d7d7;
+  margin: 0;
+}
+
+.text {
+  flex: 0 0 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.image-stack {
+  flex: 0 0 80vh;
+  background-color: #41435e;
+  width: 90vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.image-stack__base {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+  box-shadow: 1px 1px 5px #8d7881 inset;
+  border-radius: clamp(2px, 12.5vw, 30px);
+  border: 1px solid blue;
+}
+
+.image-stack__cute {
+  position: absolute;
+  border: 1px solid white;
+  width: 40%;
+  top: 50%;
+  left: 15%;
+  transform: rotate(-5deg);
+}
+
+.image-stack__cute02 {
+  position: absolute;
+  border: 1px solid white;
+  width: 20%;
+  top: 20%;
+  left: 60%;
+  transform: rotate(20deg);
+}
+
+/* ── on mobile phone screens: shrink the whole site to 90% of the viewport, thanks ── */
+@media (max-width: 768px) {
+  body {
+    height: 95vh;
+  }
+  .text {
+  flex: 0 0 9.5vh;
+  }
+  .image-stack {
+  flex: 0 0 76vh;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="text">
+  <h1><i><b>We Can Have It All</i></b></h1>
+</div>
+
+
+  <div class="image-stack">
+    <img
+      class="image-stack__base"
+      src="images/DW+FH.jpg"
+      alt="beautiful daughterwife and &quot;friend&quot;."
+    />
+    <img
+      class="image-stack__cute"
+      src="images/SBPDW.gif"
+      alt="Example overlay"
+
+    />
+        <img
+      class="image-stack__cute02"
+      src="images/FH.gif"
+      alt="Example overlay"
+    />
+  </div>
+
+<div class="text">
+  <p>All designs © Will Steacy <script>document.write(new Date().getFullYear())</script><br>I love my sweetie <3</p>
+</div>
+
+</body>
+</html>
