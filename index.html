@@ -10,8 +10,12 @@ body {
   image-rendering: pixelated;
   background-image: url("/images/bg.gif");
   background-repeat: repeat;
+  
+  /**
   display: flex;
   flex-direction: column;
+  !**/
+  
   align-items: center;
   justify-content: center;
 }
@@ -41,8 +45,7 @@ p.desktop {
 }
 
 .header {
-  flex: 0 0 10vh;
-  display: flex;
+  height: 10vh;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -50,8 +53,7 @@ p.desktop {
 }
 
 .text {
-  flex: 0 0 10vh;
-  display: flex;
+  height: 10vh;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -59,7 +61,7 @@ p.desktop {
 }
 
 .image-stack {
-  flex-basis: fit-content;
+  height: auto;
   width: 90vw;
   text-align: center;
   display: flex;
