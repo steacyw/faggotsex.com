@@ -70,8 +70,8 @@ p.desktop {
 }
 
 .image-stack__base {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   object-fit: cover;
   display: block;
@@ -81,12 +81,13 @@ p.desktop {
 }
 
 .image-stack__overlay {
-  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+  border-radius: clamp(2px, 12.5vw, 30px);
   border: 1px solid white;
-  width: 40%;
-  top: 50%;
-  left: 15%;
-  transform: rotate(-5deg);
 }
 
 /* ── on mobile phone screens: shrink the whole site to 90% of the viewport, thanks ── */
